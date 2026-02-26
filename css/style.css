@@ -1,5 +1,10 @@
+.custom-nav {
+    background-color: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(10px);
+}
+
 body {
-    font-family: Airal, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 .hero {
@@ -16,7 +21,14 @@ body {
     color: white;
     font-size: 3rem;
 }
-
+.index-banner{
+  height: 650px;
+  background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("../images/home.jpeg");
+  background-size: cover;
+  background-position: center;
+}
 .about-banner{
   height: 650px;
   background:
@@ -64,6 +76,10 @@ section {
 
 @media (max-width: 768px) {
   .about-banner { height: 240px; }
+}
+
+@media (max-width: 768px) {
+  .index-banner { height: 240px; }
 }
 
 @media (max-width: 768px) {
