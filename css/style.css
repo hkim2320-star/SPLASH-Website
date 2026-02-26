@@ -1,0 +1,74 @@
+body {
+    font-family: Airal, sans-serif;
+}
+
+.hero {
+    background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+.about-banner{
+  height: 650px;
+  background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("../images/about-us-hero.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.job-section{
+  position: relative;
+  background: 
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("../images/about-we-do-a-pretty-good-job-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  color: white;
+}
+
+.job-section h2,
+.job-section p{
+  color: white;
+}
+
+.feature-card{
+  height: 100%;
+  border: 1px solid #dee2e6;
+  border-radius: .5rem;
+  background: #fff;
+  padding: 22px;
+  text-align: center;
+}
+
+.awards-section{
+  background-color: white;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+@media (max-width: 768px) {
+  .about-banner { height: 240px; }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 0;
+    }
+}
+
