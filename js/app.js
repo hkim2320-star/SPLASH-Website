@@ -1,3 +1,5 @@
+/* SWIM LESSONS PAGE JS */
+
 $(document).ready(function () {
 
   const lessons = [
@@ -42,25 +44,21 @@ $(document).ready(function () {
             <th>Lesson</th>
             <th>Ages</th>
             <th>Format</th>
-            <th></th>
+            <th class="text-end">Details</th>
           </tr>
         </thead>
         <tbody>
   `;
 
 
-  lessons.forEach((item) => {
+  lessons.forEach((item, index) => {
     tableHTML += `
       <tr>
         <td>${item.name}</td>
         <td>${item.ages}</td>
         <td>${item.format}</td>
         <td class="text-end">
-          <button class="btn btn-primary btn-sm learn-more"
-                  data-name="${item.name}"
-                  data-note="${item.note}">
-            Learn More
-          </button>
+          <button class="btn btn-primary btn-sm learn-more" data-index="${index}">Learn More</button>
         </td>
       </tr>
     `;
@@ -75,15 +73,18 @@ $(document).ready(function () {
   $("#lessonTableWrap").html(tableHTML);
 
   $(document).on("click", ".learn-more", function () {
-    const lessonName = $(this).data("name");
-    const lessonNote = $(this).data("note");
+    const idx = $(this).data("index");
+    const lesson = lessons[idx];
 
-    alert(
-      lessonName +
-      "\n\n" +
-      lessonNote +
-      "\n\n" +
-      "Call: 000-000-0000\nEmail: info@splashes.com"
-    );
+    $("#lessonModalLabel").text(lesson.name);
+    $("#lessonModalBody").html(`
+      <p><strong>Ages:</strong> ${lesson.ages}</p>
+      <p><strong>Format:</strong> ${lesson.format}</p>
+      <p>${lesson.note}</p>
+    `);
+
+    const modal = new bootstrap.Modal(document.getElementById("lessonModal"));
+    modal.show();
+
   });
 });
