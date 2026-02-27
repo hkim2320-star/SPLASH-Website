@@ -172,6 +172,28 @@ section {
   line-height: 1.2;
 }
 
+.footer-social img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+
+.footer-cert img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.95;
+}
+
 
 @media (max-width: 768px) {
   .about-banner { height: 240px; }
