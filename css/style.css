@@ -7,15 +7,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.hero {
-    background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg");
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .hero h1 {
     color: white;
@@ -37,6 +28,29 @@ body {
   background-size: cover;
   background-position: center;
 }
+.contact-banner{
+  height: 650px;
+  background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("../images/about-us-hero.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+h2 {
+    font: bold 36px Arial, sans-serif;
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+.philosophy-section{
+  position: relative;
+  background: 
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("../images/about-our-philosophy-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  color: white;
+}
 
 .job-section{
   position: relative;
@@ -56,23 +70,92 @@ body {
 
 .feature-card{
   height: 100%;
-  border: 1px solid #dee2e6;
   border-radius: .5rem;
-  background: #fff;
+  background: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.11));
   padding: 22px;
   text-align: center;
 }
 
+.feature-panel {
+  padding: 48px;
+  text-align: left;
+}
+.feature-title {
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.feature-text {
+  color: #555;
+  line-height: 1.5;
+}
+.feature-list {
+  padding-left: 18px;
+  margin: 0;
+}
+.feature-split {
+  position: relative;
+  background: 
+    url("../images/home-hands-on-teaching.jpeg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+}
+.locations-home{
+  position: relative;
+  background: 
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("../images/home-our-locations-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  color: white;
+  overflow: hidden;
+}
+.locations-home-overlay{
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 55%;
+
+  width: 55%;
+  height: auto;
+  background: url("../images/home-our-locations-map.png") no-repeat; 
+  background-size: contain;
+  background-position: right;
+}
 .awards-section{
   background-color: white;
   border-top: 1px solid #e5e7eb;
   border-bottom: 1px solid #e5e7eb;
 }
 
+.contact-card {
+  display: inline-flex;
+  width: 170px;
+  height: 170px;
+  background: #fff;
+  border-radius: 2px;
+  border: 1px solid #eee;
+  box-shadow: 0 10px 12px rgba(0,0,0,0.06);
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.contact-card img {
+  width: 150px;
+  height: auto;
+}
+.contact-link {
+    display: inline-block;
+    margin-top: 14px;
+}
+
 section {
     padding-top: 100px;
     padding-bottom: 120px;
 }
+
 
 @media (max-width: 768px) {
   .about-banner { height: 240px; }
