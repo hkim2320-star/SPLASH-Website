@@ -211,6 +211,21 @@ section {
   line-height: 1.2;
 }
 
+.location-card {
+    padding: 20px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    text-decoration: none;
+}
+.location-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.16);
+}
+
 .footer-social img {
   width: 34px;
   height: 34px;

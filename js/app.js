@@ -88,3 +88,34 @@ $(document).ready(function () {
 
   });
 });
+
+
+/* LOCATIONS PAGE JS AJAX */
+if ($('#locationsWrap').length) {
+    $.getJSON('data/locations.json', function(regions) {
+        let html = "";
+        regions.forEach(function (group) {
+            html += `
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="location-card h-100">
+                    <h5 class="fw-bold mb-3">${group.region}</h5>
+                    <ul class="list-unstyled mb-0">
+                        `;
+                        group.items.forEach(function (loc) {
+                            html += `
+                                <li class="mb-2">
+                                <a class="location-link" href="${loc.url}">${loc.name}</a>
+                                </li>
+                            `;
+                        });
+                        html += `
+                    </ul>
+                </div>
+            </div>
+            `;
+        });
+        $('#locationsWrap').html(html);
+        }).fail(function() {
+            $('#locationsWrap').html("<p class='text-danger'>Failed to load locations data.</p>");
+        });
+}
