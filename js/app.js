@@ -119,3 +119,15 @@ if ($('#locationsWrap').length) {
             $('#locationsWrap').html("<p class='text-danger'>Failed to load locations data.</p>");
         });
 }
+
+/* SIGN IN MODAL JS */
+$(document).on("click", "#openSignIn", function(e){
+  e.preventDefault();
+  const modal = new bootstrap.Modal(document.getElementById("signInModal"));
+  modal.show();
+});
+
+$(document).on("submit", "#signInForm", function(e){
+  e.preventDefault();
+  alert("Signed in! (demo)");
+  });

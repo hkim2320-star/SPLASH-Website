@@ -32,7 +32,7 @@
         <li class="nav-item"><a class="nav-link" href="adultprogram.html">Adult Programs</a></li>
         <li class="nav-item"><a class="nav-link" href="locations.html">Locations</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        <li class="nav-item"><a class="btn btn-primary ms-2" href="signin.html">Sign In</a></li>
+        <li class="nav-item"><a class="btn btn-primary ms-2" href="#" id="openSignIn">Sign In</a></li>
       </ul>
     </div>
   </div>
@@ -198,6 +198,37 @@
           Email : info@splashes.com
         </p>
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- SIGN IN MODAL -->
+<div class="modal fade" id="signInModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content sign-modal">
+        <button type="button" class="btn-close sign-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="text-center mb-3">
+          <img src="images/logo-small.png" alt="Saplshes" class="sign-logo-top">
+        </div>
+        <h3 class="text-center mb-4 sign-title">SIGN IN</h3>
+
+        <form id="signInForm">
+          <div class="mb-3">
+            <label class="form-label sign-label">Email *</label>
+            <input type="email" class="form-control" required>
+          </div>
+          <div class="mb-2">
+            <label class="form-label sign-label">Password *</label>
+            <input type="password" class="form-control" required>
+          </div>
+          <div class="text-end mb-4">
+            <a href="#" class="sign-forgot">Forgot Password?</a>
+          </div>
+          <div class="d-flex gap-3 justify-content-center">
+            <button type="submit" class="btn sign-btn sign-btn-primary">Sign In</button>
+            <button type="button" class="btn sign-btn sign-btn-outline">Sign up</button>
+          </div>
+        </form>
     </div>
   </div>
 </div>
