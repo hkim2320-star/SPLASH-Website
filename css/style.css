@@ -197,6 +197,12 @@ h5 {
     display: inline-block;
     margin-top: 14px;
 }
+.preferred-label {
+    font-size: 20px;
+    color: #4860e9;
+    font-weight: bold;
+    margin-top: 40px;
+}
 
 section {
     padding-top: 100px;
@@ -239,10 +245,14 @@ body.modal-open #pageWrap{
 
 .sign-modal{
   position: relative;
-  padding: 28px 28px 34px;
-  border-radius: 12px;
-  border: 0;
-  box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+  padding: 40px 40px 40px 80px;
+}
+.sign-shark {
+    position: absolute;
+    top: 20px;
+    left: -60px;
+    height: 120px;
+    z-index: 5;
 }
 
 .sign-close{
@@ -252,7 +262,7 @@ body.modal-open #pageWrap{
 }
 
 .sign-logo-top{
-  height: 48px;
+  height: 120px;
 }
 
 .sign-title{
@@ -316,6 +326,10 @@ body.modal-open #pageWrap{
   text-decoration: none;
 }
 
+footer {
+  padding-left: 60px;
+  padding-right: 60px;
+}
 
 .footer-cert img {
   height: 40px;

@@ -1,0 +1,36 @@
+[
+    {
+        "region": "Orange County",
+        "items": [
+            { "name": "Irvine", "url":"#"},
+            { "name": "Fullerton", "url":"#"}
+            ]
+    },
+    {
+        "region": "Los Angeles County",
+        "items": [
+            { "name": "Torrance", "url":"#"},
+            { "name": "Pasadena", "url":"#"}
+            ]
+    },
+    {
+        "region": "San Diego County",
+        "items": [
+            { "name": "Carlsbad", "url":"#"},
+            { "name": "San Diego", "url":"#"}
+            ]
+    },
+    {
+        "region": "Northern California",
+        "items": [
+            { "name": "San Jose", "url":"#"},
+            { "name": "Sacramento", "url":"#"}
+            ]
+    },
+    {
+        "region": "Denver",
+        "items": [
+            { "name": "Denver", "url":"#"}
+            ]
+    }
+]
